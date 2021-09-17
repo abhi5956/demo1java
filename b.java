@@ -1,3 +1,5 @@
+package com.geekster;
+
 import java.util.Scanner;
        public class B {
 
