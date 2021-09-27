@@ -1,0 +1,36 @@
+package com.geekster;
+
+import java.util.Scanner;
+
+public class AdditionMethod {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Scanner scan1 = new Scanner(System.in);
+        Scanner scan2 = new Scanner(System.in);
+        System.out.print("Enter First number ");
+        int a = scan.nextInt();
+        scan.nextLine();
+        System.out.print("Enter 1 for Addition & 2 for Multiply  ");
+        int c = scan1.nextInt();
+
+        System.out.print("Enter Second number ");
+        int b = scan2.nextInt();
+        
+        if (c == 1 ) {
+            int sum = add(a, b);
+            System.out.println("sum is " + sum);
+        }else {
+            int multiply = multiply(a, b);
+            System.out.println("Multiplication is " + multiply);
+        }
+
+    }
+
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+}
