@@ -1,0 +1,12 @@
+package com.geekster;
+
+public class XorUsingFindEvenNumber {
+    public static void main(String[] args) {
+        int n = 21;
+        if ((n ^ 1) == n + 1) {
+            System.out.println("even");;
+        } else{
+            System.out.println("odd");;
+            }
+            }
+            }
