@@ -1,0 +1,22 @@
+package com.geekster;
+
+public class AddOfTwoArray {
+    public static void main(String[] args) {
+        int a[] = { 1, 8,45,48, 3 };
+        int b[] = { 10,14,15,13 };
+
+        int first= a.length;
+        int second= b.length;
+        int c1 = first + second;
+        int [] c = new int[c1];
+        for(int i=0; i< first; i=i+1){
+            c[i]= a[i];
+        }
+        for(int i=0;i<second;i=i+1){
+            c[first + i]=b[i];
+        }
+        for (int i=0;i<c1;i=i+1) {
+            System.out.println(c[i]);
+        }
+    }
+}
