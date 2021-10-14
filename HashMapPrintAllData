@@ -1,0 +1,19 @@
+package com.geekster;
+
+import java.util.HashMap;
+
+public class HashMapPrintAllData {
+    public static void main(String[] args) {
+        HashMap<Integer,String> datamap = new HashMap<>();
+        datamap.put( 1,"sanjay");
+        datamap.put( 2,"ashutosh");
+        datamap.put( 3,"nipun");
+        datamap.put( 4,"rubbish");
+        datamap.put( 5,"akanksha");
+        for (Integer key: datamap.keySet()) {
+            System.out.println("key "+ key + " value- " + datamap.get(key));
+        }
+        
+
+    }
+}
