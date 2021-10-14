@@ -18,7 +18,7 @@ public class MinMaxStringHashMethod {
                 }
             }
             for (Character key: datamap.keySet()) {
-                System.out.println("key "+ key + " value- " + datamap.get(key));
+                System.out.println(key + "= " + datamap.get(key));
             }
         }
     }
