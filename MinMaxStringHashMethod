@@ -1,0 +1,24 @@
+package com.geekster;
+import java.util.HashMap;
+public class MinMaxStringHashMethod {
+    public static void main(String[] args) {
+        String  str= "aaabbbcccddeeeffffksacd";
+        HashMap<Character,Integer> datamap= new HashMap<>();
+        for (int i=0;i<str.length();i++){
+            Character ch =str.charAt(i);
+            if(ch>='a' && ch<='z' ){
+                if(datamap.containsKey(ch)){
+                    Integer value=datamap.get(ch);
+                    value++;
+                    datamap.put(ch,value);
+                }else {
+                    datamap.put(ch,1);
+                }
+
+                }
+            }
+            for (Character key: datamap.keySet()) {
+                System.out.println("key "+ key + " value- " + datamap.get(key));
+            }
+        }
+    }
