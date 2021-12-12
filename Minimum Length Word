@@ -29,9 +29,12 @@ public class Solution {
       small = large = words[0];        
       for(int k = 0; k < length; k++){       
           if(small.length() > words[k].length())    
-              small = words[k];       
+              small = words[k];
+          if(large.length() < words[k].length())    
+              large = words[k]; 
       }    
-      System.out.println( small);    
+      System.out.println( small);  
+      System.out.println("Largest word: " + large);
     
     }
 }
